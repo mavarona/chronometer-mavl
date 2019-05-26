@@ -1,0 +1,28 @@
+{
+    "name": "chronometer-mavl",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "tsc -w",
+        "compodoc": "npx compodoc -p ./tsconfig.doc.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mavarona/chronometer-mavl.git"
+    },
+    "keywords": [],
+    "author": "mavlmac",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mavarona/chronometer-mavl/issues"
+    },
+    "homepage": "https://github.com/mavarona/chronometer-mavl#readme",
+    "dependencies": {
+        "rxjs": "^6.5.2"
+    },
+    "devDependencies": {
+        "@compodoc/compodoc": "^1.1.9"
+    }
+}
