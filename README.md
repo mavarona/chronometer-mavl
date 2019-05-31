@@ -1,6 +1,7 @@
 # Chronometer
 [![Build Status](https://travis-ci.com/mavarona/chronometer-mavl.svg?branch=master)](https://travis-ci.com/mavarona/chronometer-mavl)
 [![npm version](https://badge.fury.io/js/chronometer-mavl.svg)](https://badge.fury.io/js/chronometer-mavl)
+[![Coverage Status](https://coveralls.io/repos/github/mavarona/chronometer-mavl/badge.svg?branch=master)](https://coveralls.io/github/mavarona/chronometer-mavl?branch=master)
 [![Documentation](https://raw.githubusercontent.com/mavarona/chronometer-mavl/master/documentation/images/coverage-badge-documentation.svg?sanitize=true)](https://github.com/mavarona/chronometer-mavl)
 
 Stopwatch to count in ascending and descending mode
