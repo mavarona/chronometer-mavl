@@ -1,4 +1,6 @@
 # Chronometer
+[![Build Status](https://travis-ci.com/mavarona/chronometer-mavl.svg?branch=master)](https://travis-ci.com/mavarona/chronometer-mavl)
+
 Stopwatch to count in ascending and descending mode
 
 ## Installation
