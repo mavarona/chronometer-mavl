@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+lib/
+documentation/
+tsconfog.doc.json
+coverage/
