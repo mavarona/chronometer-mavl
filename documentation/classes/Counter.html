@@ -124,15 +124,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>start()</code>
+<code>start(intervalTime: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="22"
-                            class="link-to-prism">lib/counter.ts:22</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">lib/counter.ts:24</a></div>
                 </td>
             </tr>
 
@@ -143,8 +143,48 @@
 </div>
 
                     <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>intervalTime</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>Chrono.SC_IN_MS</code>
+                                    </td>
+
+                                    <td>
+                                        <p>the number of miliseconds of the ticks.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -163,6 +203,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {interval} from &#x27;rxjs/internal/observable/interval&#x27;;
 import {map} from &#x27;rxjs/internal/operators/map&#x27;;
 import { convertSecondToDiplay } from &#x27;./conversion&#x27;;
+import { Chrono } from &#x27;./constants&#x27;;
 
 /**
  * count one by one ascending
@@ -180,9 +221,10 @@ export class Counter {
     }
     /**
      * Count of 0 up to the established limit
+     * @param intervalTime the number of miliseconds of the ticks.
      */
-    start(){
-        return interval(1000).pipe(
+    start(intervalTime: number &#x3D; Chrono.SC_IN_MS){
+        return interval(intervalTime).pipe(
             map(
                 (sc: number) &#x3D;&gt; {
                         return convertSecondToDiplay(sc, 1, this.limit);

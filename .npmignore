@@ -4,3 +4,5 @@ lib/
 documentation/
 tsconfog.doc.json
 coverage/
+firebase.json
+.firebaserc
